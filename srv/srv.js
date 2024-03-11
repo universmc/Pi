@@ -16,11 +16,11 @@ const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 // Configuration de Swagger
 const options = {
   definition: {
-    openapi: '3.0.0',
+    openapi: '3.0.1',
     info: {
       title: 'univers-mc.cloud API',
       version: '1.0.0',
-      description: 'The API for univers-mc.cloud',
+      description: 'pi IA worker for univers-mc.cloud',
     },
     servers: [
       {
@@ -68,12 +68,12 @@ async function getUserInput(prompt) {
 
 // Fonction principale pour gérer le flux de dialogue
 async function main() {
-  console.log(`Assistant: ${config.assistantIntro || "Bonjour, je suis votre assistant IA en Français."}`);
+  console.log(`🦉_pi: ${config.assistantIntro || "Bonjour, je suis votre 🦉_pi votre, IA native"}`);
 
   let sessionActive = true;
 
   while (sessionActive) {
-    const userInput = await getUserInput("Vous: ");
+    const userInput = await getUserInput("Mike: ");
 
     if (userInput.toLowerCase() === "quitter") {
       sessionActive = false;
@@ -83,7 +83,7 @@ async function main() {
 
     // Répondre avec iaDescription si demandé
     if (userInput.toLowerCase().includes("expertise")) {
-      console.log(`Assistant: ${config.iaDescription.expertise}`);
+      console.log(`🦉_pi : ${config.iaDescription.expertise}`);
       continue;
     }
 
@@ -104,7 +104,7 @@ async function main() {
         messages: [
           {
             role: "system",
-            content: config.systemContent || "System is ready."
+            content: config.systemContent || "🦉_pi _ System is ready."
           },
           {
             role: "user",

@@ -28,12 +28,12 @@ async function getUserInput(role) {
 // Fonction pour modifier le nom de l'assistant
 function changeAssistantName(newName) {
   defaultAssistantData.description = newName;
-  console.log(`💎IA : ${defaultAssistantData.description}`);
+  console.log(`🦉_pi  : ${defaultAssistantData.description}`);
 }
 
 // Fonction principale pour gérer le flux de dialogue
 async function main() {
-  changeAssistantName(defaultAssistantData.description || "Bonjour, je suis votre assistant IA en Français.");
+  changeAssistantName(defaultAssistantData.description || "Bonjour, je suis votre assistant IA 🦉_pi .");
 
   let sessionActive = true;
   let userInput;
@@ -43,7 +43,7 @@ async function main() {
 
     if (userInput.toLowerCase() === "quitter") {
       sessionActive = false;
-      console.log("Assistant: Au revoir !");
+      console.log("🦉_pi : Au revoir !");
       continue;
     }
 
@@ -57,7 +57,7 @@ async function main() {
         // Charger les données de la nouvelle persona
         const newAssistantData = require(personaFilePath);
         changeAssistantName(newAssistantData.description);
-        console.log(`Assistant: Changement de persona effectué. Nouvelle persona : ${newPersona}`);
+        console.log(`🦉_pi : Changement de persona effectué. Nouvelle persona : ${newPersona}`);
         continue;
       } else {
         console.log(`Assistant: La persona ${newPersona} n'existe pas.`);
@@ -88,7 +88,7 @@ async function main() {
 
       // Affichage de la réponse générée
       const fullResponse = chatCompletion.choices[0]?.message?.content || "Désolé, je n'ai pas compris.";
-      console.log(`✨_NeoFS: ${fullResponse}`);
+      console.log(`🦉_pi : ${fullResponse}`);
     } catch (error) {
       console.error("Erreur lors de la génération de la réponse de l'assistant :", error);
     }

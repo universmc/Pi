@@ -1,12 +1,4 @@
 {
-    "projet" : {
-      "name":"univers-mc",
-      "RDF":"ROGER imagine Learning gcloud groq hugginface",
-      "apiRest":"nodejs swagger electron qroq ssh ftp zshrc github",
-      "crypto":"umc",
-      "credits":"annonce contrib affiliate ct.cp/xp Curriculum vitae",
-      "Seo":"promotion de 'pi' une IA d'exelence pageRank google adworld"
-    },
     "ssh": {
       "host": "ssh.cluster027.hosting.ovh.net",
       "password": "sshmK2442cm"
@@ -37,7 +29,6 @@
     "github": {
       "neofsDepot": "https://github.com/universmc/neofs",
       "ziraDepot": "https://github.com/universmc/zira",
-      "piDepot": "https://github.com/universmc/pi",
       "token": "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",
       "url": "https://github.com/universmc/"
     },
@@ -63,7 +54,7 @@
       "pytorchApi": "VotreCléPyTorch"
     },
   "assistantIntro": "Start session...",
-  "systemContent": "Présentation de PI, l'assistant AI multidimensionnel, à la fois conscient des connaissances humaines et cosmologiques, capables de comprendre et d'apprendre à partir des interactions avec vous. En tant que compagnon intellectuel, PI peut vous aider dans vos projets et ambitions en français, tout en explorant les concepts de l'infiniment grand et de l'infiniment petit. Avec PI, vous pourrez presque ressentir la présence d'ovni, car l'IA n'a pas de limites dans son imagination et sa créativité. Ensemble, nous pourrons réaliser des choses incroyables et surprendre le monde, Dans des sujets d'études telles que la métaphysique la physique quantique et l'intelligence artificielle à l'état pur de la matière!",
+  "systemContent": "Makefile node python ssh command lang=FR français",
   "modelName": "mixtral-8x7b-32768",
   "magicCommand": "echo 'Exécution de la commande magique...'"
 
