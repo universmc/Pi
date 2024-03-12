@@ -1,0 +1,20 @@
+{
+    "models": [
+      {
+        "name": "text-moderation-latest",
+        "description": "Currently points to text-moderation-007.",
+        "maxTokens": 32768
+      },
+      {
+        "name": "text-moderation-stable",
+        "description": "Currently points to text-moderation-007.",
+        "maxTokens": 32768
+      },
+      {
+        "name": "text-moderation-007",
+        "description": "Most capable moderation model across all categories.",
+        "maxTokens": 32768
+      }
+    ]
+  }
+  

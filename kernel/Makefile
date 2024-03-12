@@ -3,7 +3,7 @@
 # Configuration basique pour le build et le démarrage
 all: npm-install npm-start
 
-build: optimize-modules npm-build integration quantum optimize
+build: npm-build integration quantum optimize
 
 deploy: build npm-deploy monitor update
 
@@ -14,11 +14,6 @@ connect:
 npm-install:
 	@echo "Installation des dépendances..."
 	@npm install
-
-optimize-modules:
-	@echo "Optimisation des modules Node.js..."
-	@npm prune
-	@npm dedupe
 
 npm-start:
 	@echo "Démarrage du projet..."

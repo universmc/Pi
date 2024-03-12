@@ -1,0 +1,15 @@
+{
+    "models": [
+      {
+        "name": "Model_text-completion",
+        "capabilities": "Capacités du modèle 1",
+        "url": "URL d'accès au modèle 1"
+      },
+      {
+        "name": "Modelchatbot",
+        "capabilities": "Capacités du modèle 2",
+        "url": "URL d'accès au modèle 2"
+      }
+    ]
+  }
+  
