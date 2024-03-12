@@ -1,0 +1,9 @@
+{
+    "modelPath": "path/to/your/model",
+    "hyperparameters": {
+    "maxLength": 512,
+    "batchSize": 32
+    },
+    "apiKey": "your_api_key_here"
+    }
+    

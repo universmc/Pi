@@ -56,7 +56,11 @@
   "assistantIntro": "Start session...",
   "systemContent": "Makefile node python ssh command lang=FR français",
   "modelName": "mixtral-8x7b-32768",
-  "magicCommand": "echo 'Exécution de la commande magique...'"
-
+  "magicCommand": "echo 'Exécution de la commande magique...'",
+  "modelPath": "build/model.json",
+  "hyperparameters": {
+    "learningRate": 0.01,
+    "epochs": 100
   }
+}
   
