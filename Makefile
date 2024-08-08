@@ -1,120 +1,97 @@
-.PHONY: help all frontend backend build deploy test integration quantum optimize monitor update documentation
+# Define variables
+NODE_ENV = development
+NODE_PORT = 5144
+NODE_APP = index.js
 
-# Configuration basique pour le build et le démarrage
-all: npm-install npm-start
+menu :
+	@echo "Welcom To cycliq Economical system."
+	@echo""
+	@echo"╔═════════════════════════════════════╗     ╔═════════════════════════════════════════════════════════════════════╗"
+	@echo"╠═══════════ ✨ Pi Console ═══════════╣     ║  [💫] [💬] [📚] [🌌] [✨] [⚡️] [💰] [🌴] [📱] [📡]              [🛰]║"
+	@echo"║                                     ║     ╠═════════════════════════════════════════════════════════════════════╣"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"║                                     ║     ║                                                                     ║"
+	@echo"╠═════════════════════════════════════╣     ╠═════════════════════════════════════════════════════════════════════╣"
+	@echo"║(∏)                                  ║     ║[💻.📱]:/<                                                        /%>║"
+	@echo"╚═════════════════════════════════════╝     ╚═════════════════════════════════════════════════════════════════════╝"	
+	@echo""
 
-build: optimize-modules npm-build integration quantum optimize
+MAGIC_TARGETS := codex build rep file script clean
 
-deploy: build npm-deploy monitor update
-
-connect:
-	@ssh -p 22 univerq-ps1@ssh.cluster027.hosting.ovh.net
-
-# Installation et démarrage
-npm-install:
-	@echo "Installation des dépendances..."
-	@npm install
-
-optimize-modules:
-	@echo "Optimisation des modules Node.js..."
-	@npm prune
-	@npm dedupe
-
-npm-start:
-	@echo "Démarrage du projet..."
-	@npm start
-
-# Test
-test: npm-test
-
-# Intégration avec des ressources externes
-integration:
-	@echo "Intégration avec des ressources externes..."
-
-# Utilisation de la mécanique quantique
-quantum:
-	@echo "Intégration des algorithmes quantiques..."
-
-# Optimisation
-optimize:
-	@echo "Optimisation des performances..."
-
-# Surveillance et mise à jour
-monitor:
-	@echo "Surveillance des performances et résolution des problèmes..."
+all: $(MAGIC_TARGETS)
 
 update:
-	@echo "Mise à jour des dépendances et des bibliothèques..."
+	@echo "✨ Mise en état du dossier sur github✨"
+	@git add .
+	@git commit -m "test"
+	@git push
+	@echo "✨ Mise à jour terminée✨"
 
-# Cible pour installer les dépendances de Node.js
-node:
-	@npm install
+init: gantt phase1 phase2 phase3 phase4 phase5 phase6 phase7 phase8
+# Magic COMPILER groq quantum
+gantt:
+	@echo "initialisation de l'instance"
+	@git clone auto
 
-# Cible pour exécuter les tests de Node.js
-npmtest:
-	@npm test
+phase1:
+	@echo "phase de conception"
+	@node mission.js
 
-# Cible pour installer les dépendances de Python
-python:
-	@pip install -r requirements.txt
+phase2:
+	@echo "phase de configuration"
+	@node configuration.js
 
-# Cible pour exécuter les tests de Python
-pytest:
-	@pytest
+phase3:
+	@echo "phase d'entrainnement du model IA"
+	@node models.js
 
-# Cible pour générer une clé SSH
-ssh-keygen:
-	@ssh-keygen -t rsa
-
-# Cible pour se connecter à un hôte distant via SSH
-ssh:
-	@ssh user@example.com
-
-# Documentation
-documentation:
-	@echo "Documentation du processus et des décisions de conception..."
-
-# Tests, builds, et déploiements avec npm
-npm-test:
-	@echo "Test du projet..."
-	@npm test
-
-npm-build:
-	@echo "Build du projet..."
-	@npm run build
-
-npm-deploy:
-	@echo "Déploiement du projet..."
-	@npm run deploy
-
-# Aide
-help:
-	@echo "Makefile pour la session de brainstorming"
-	@echo "Utilisez 'make <target>' où <target> peut être l'un des suivants:"
-	@echo "  all          Pour installer les dépendances et démarrer le projet"
-	@echo "  build        Pour construire le projet avec intégration et optimisations"
-	@echo "  deploy       Pour déployer le projet après le build"
-	@echo "  test         Pour tester le projet"
-	@echo "  integration  Pour l'intégration avec des ressources externes"
-	@echo "  quantum      Pour intégrer les fonctionnalités quantiques"
-	@echo "  optimize     Pour optimiser le projet"
-	@echo "  monitor      Pour surveiller et résoudre les problèmes"
-	@echo "  update       Pour mettre à jour les dépendances et les bibliothèques"
-	@echo "  documentation Pour documenter le processus et les décisions"
+phase4:
+	@echo "phase de gestion et iteration du frontend"
+	@git clone src.js
+	
+phase5:
+	@echo "phase de gestion et iteration du backend"
+	@node srv.js
 
 
-# Frontend
-frontend: html css javascript
+phase6:
+	@echo "phase de test et debugage"
+	@node data.js
 
-html:
-	@echo "Construire le(s) fichier(s) HTML..."
+phase7:
+	@echo "phase de validation documentation"
+	@node models/modelcss.js
 
-css:
-	@echo "Construire le(s) fichier(s) CSS..."
+phase8:
+	@echo "phase d'affiliation et contribution"
+	@node models/modelcss.js
 
-javascript:
-	@echo "Construire le(s) fichier(s) JavaScript..."
+server:
+	@node srv/Telegram/server.js
+	@echo "Unleashing quantum Magic Mafile with every script we shape" 
+# Ouvrez-vous aux dimensions cachées
+clean-r:
+	@echo "Returning the quantum realm to pristine state"
+	@rm -rf data/* build/* src/* data/*
 
-# Backend
-backend:
-	@echo "Construire le(s) fichier(s) backend..."
+clean-R:
+	@echo "Unweaving the fabric, a celestial fate"@rm -rf output/ build/ src/ data/
+
+clean: clean-r clean-R

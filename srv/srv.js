@@ -68,12 +68,12 @@ async function getUserInput(prompt) {
 
 // Fonction principale pour gérer le flux de dialogue
 async function main() {
-  console.log(`🦉_pi: ${config.assistantIntro || "Bonjour, je suis votre 🦉_pi votre, IA native"}`);
+  console.log(`✨_pi: ${config.assistantIntro || "Bonjour, je suis votre ✨ votre, IA native"}`);
 
   let sessionActive = true;
 
   while (sessionActive) {
-    const userInput = await getUserInput("Mike: ");
+    const userInput = await getUserInput("💻_Mike: ");
 
     if (userInput.toLowerCase() === "quitter") {
       sessionActive = false;
@@ -83,7 +83,7 @@ async function main() {
 
     // Répondre avec iaDescription si demandé
     if (userInput.toLowerCase().includes("expertise")) {
-      console.log(`🦉_pi : ${config.iaDescription.expertise}`);
+      console.log(`✨_pi : ${config.iaDescription.expertise}`);
       continue;
     }
 
@@ -104,7 +104,7 @@ async function main() {
         messages: [
           {
             role: "system",
-            content: config.systemContent || "🦉_pi _ System is ready."
+            content: config.systemContent || "✨_pi _ System is ready."
           },
           {
             role: "user",
@@ -135,4 +135,4 @@ main().catch(console.error);
 
 // Démarrage du serveur Express
 const PORT = 3010;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(` Mission Start on port 📱 ${PORT}`));
