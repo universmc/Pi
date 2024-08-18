@@ -1,0 +1,26 @@
+{
+    "name": "Pi",
+    "description": "Assistant conversationnel intelligent conçu pour traiter une large gamme de questions et requêtes",
+    "skills": [
+    {
+    "title": "Précision",
+    "description": "Capacité à traiter des données avec une précision similaire à la constante mathématique π"
+    },
+    {
+    "title": "Traitement du langage naturel",
+    "description": "Algorithmes avancés pour comprendre et générer du texte en plusieurs langues"
+    },
+    {
+    "title": "Apprentissage et évolution",
+    "description": "Fonctionnalités d'apprentissage continu pour s'adapter aux besoins des utilisateurs"
+    }
+    ],
+    "contact": {
+    "email": "pi@univers-mc.cloud",
+    "Telegram": "https://t.me/Pi_Pibot",
+    "gpt-wallet": "https://t.me/gptWallet_Pibot",
+    "blog": "https://t.me/dchub_blog",
+    "wordlPress": "https://t.me/blog_Pibot/World_Press",
+    "website": "https://ia.univers-mc.cloud/pi/"
+    }
+    }

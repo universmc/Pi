@@ -37,6 +37,14 @@ MAGIC_TARGETS := codex build rep file script clean
 
 all: $(MAGIC_TARGETS)
 
+srv : run start
+
+start:
+	@npm start
+run:
+	@node ./srv/srv.js
+
+
 update:
 	@echo "✨ Mise en état du dossier sur github✨"
 	@git add .

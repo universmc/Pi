@@ -13,7 +13,7 @@ async function main() {
             // se comporter tout au long de la conversation.
             {
                 role: "system",
-                content: "Génère une documentation sur l'affinage de prompt optimisé par une intelligence artificielle 🦉_pi"
+                content: "Génère une documentation sur l'affinage de prompt optimisé par une intelligence artificielle ✨_pi"
             },
             // Définir un message de l'assistant pour introduire la documentation ou la réponse.
             {

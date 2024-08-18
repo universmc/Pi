@@ -110,15 +110,11 @@ async function main() {
             content: config.systemContent || "✨_pi _ System is ready."
           },
           {
-            role: "assistant",
-            content: "bonjour je suis votre assistant au coeur de ce source dans le répertoire racine (./)"
-          },
-          {
             role: "user",
             content: userInput
           }
         ],
-        model: config.modelName || "mixtral-8x7b-32768",
+        model: config.modelName || "gemma2-9b-it",
         temperature: 0.9,
         max_tokens: 1024,
         top_p: 1,

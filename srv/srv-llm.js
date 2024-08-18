@@ -110,10 +110,6 @@ async function main() {
             content: config.systemContent || "✨_pi _ System is ready."
           },
           {
-            role: "assistant",
-            content: "bonjour je suis votre assistant au coeur de ce source dans le répertoire racine (./)"
-          },
-          {
             role: "user",
             content: userInput
           }
@@ -142,4 +138,4 @@ main().catch(console.error);
 
 // Démarrage du serveur Express
 const PORT = 3010;
-app.listen(PORT, () => console.log(` Mission Start on port 📱 ${PORT}`));
+app.listen(PORT, () => console.log(` Mission Start on port /groq 📱 ${PORT}`));

@@ -1,0 +1,87 @@
+{
+    "title": "Guide pour rédiger une chronique politique quotidienne à la radio",
+    "introduction": "Captiver l'attention de votre audience en 5 minutes chrono ? C'est possible avec une chronique politique bien structurée et dynamique !",
+    "structure": {
+      "5W": [
+        {
+          "question": "Qui ?",
+          "description": "Identifiez les protagonistes de l'actualité politique : les politiciens, les partis, les organisations, les citoyens.",
+          "example": "Emmanuel Macron a annoncé hier..."
+        },
+        {
+          "question": "Où ?",
+          "description": "Précisez le lieu de l'événement politique : un pays, une ville, un bâtiment.",
+          "example": "... lors d'un discours à l'Assemblée nationale."
+        },
+        {
+          "question": "Quand ?",
+          "description": "Indiquez la date et l'heure de l'événement politique.",
+          "example": "... hier soir, à 20h."
+        },
+        {
+          "question": "Quoi ?",
+          "description": "Décrivez l'événement politique en utilisant des verbes d'action et des phrases concises.",
+          "example": "... une nouvelle loi sur l'immigration."
+        },
+        {
+          "question": "Pourquoi ?",
+          "description": "Expliquez les motivations derrière l'événement politique.",
+          "example": "... pour lutter contre l'immigration clandestine."
+        }
+      ],
+      "langage": [
+        {
+          "temps": "Présent",
+          "description": "Privilégiez l'indicatif présent pour décrire l'actualité : \"Le gouvernement annonce...\"",
+          "example": "Le gouvernement annonce..."
+        },
+        {
+          "temps": "Passé composé",
+          "description": "Utilisez le passé composé pour évoquer des événements passés : \"Le président a déclaré...\"",
+          "example": "Le président a déclaré..."
+        },
+        {
+          "temps": "Futur simple",
+          "description": "Employez le futur simple pour évoquer des perspectives : \"La situation pourrait évoluer...\"",
+          "example": "La situation pourrait évoluer..."
+        }
+      ],
+      "relance": [
+        {
+          "type": "Question ouverte",
+          "description": "Posez des questions ouvertes pour susciter l'interaction : \"Qu'en pensez-vous ?\"",
+          "example": "Qu'en pensez-vous ?"
+        },
+        {
+          "type": "Piste de réflexion",
+          "description": "Proposez des pistes de réflexion pour engager l'audience : \"Ce débat soulève de nombreuses questions...\"",
+          "example": "Ce débat soulève de nombreuses questions..."
+        },
+        {
+          "type": "Expression d'accroche",
+          "description": "Utilisez des expressions d'accroche pour captiver l'attention : \"C'est un tournant majeur...\"",
+          "example": "C'est un tournant majeur..."
+        }
+      ],
+      "rythme": [
+        {
+          "conseil": "Phrases courtes et concises",
+          "description": "Utilisez des phrases courtes et concises pour une lecture dynamique."
+        },
+        {
+          "conseil": "Variez le ton de votre voix",
+          "description": "Variez le ton de votre voix pour éviter la monotonie."
+        },
+        {
+          "conseil": "Effets sonores",
+          "description": "Ajoutez des effets sonores pour enrichir votre chronique."
+        }
+      ]
+    },
+    "conclusion": [
+      "Soyez objectif et impartial dans votre analyse.",
+      "Restez informés sur l'actualité politique.",
+      "Adaptez votre contenu à votre audience.",
+      "En suivant ces conseils, vous créerez une chronique politique quotidienne à la radio captivante et informative."
+    ]
+  }

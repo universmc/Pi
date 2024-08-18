@@ -1,0 +1,52 @@
+{
+    "Step 1": {
+    "ia.univers-mc.cloud/pi": "Indexation, analyse du code et fourniture de suggestions",
+    "pi.ia": "Génération de code et modification de l'index.html"
+    },
+    "Step 2": {
+    "Tools": [
+    "npm",
+    "Git",
+    "Visual Studio Code"
+    ],
+    "Tasks": [
+    "Cloner le référentiel GitHub",
+    "Installer et configurer l'API de vos IA",
+    "Travailler localement sur votre machine"
+    ]
+    },
+    "Step 3": {
+    "Process": [
+    "Utiliser l'API de l'IA d'analyse pour analyser le code",
+    "Récupérer les suggestions de styles et améliorations de code",
+    "Effectuer un tri et une évaluation des suggestions"
+    ]
+    },
+    "Step 4": {
+    "Code generation": [
+    "Utiliser l'API de l'IA de génération de code pour créer du code basé sur les suggestions",
+    "Intégrer les suggestions de manière adéquate à votre projet",
+    "Assurer la conformité du code généré aux standards de développement web"
+    ]
+    },
+    "Step 5": {
+    "index.html modification": [
+    "Utiliser l'IA de génération de code pour modifier l'index.html",
+    "Optimiser l'index.html pour le SEO et les standards de W3C"
+    ]
+    },
+    "Step 6": {
+    "Validation et test": [
+    "Tester le code généré et les modifications apportées",
+    "Utiliser des outils de validation de code",
+    "Exécuter des tests de performances"
+    ]
+    },
+    "Step 7": {
+    "Intégration": [
+    "Valider les modifications",
+    "Résoudre les conflits potentiels avec le code existant",
+    "Créer une pull request pour incorporer les modifications"
+    ]
+    }
+    }
