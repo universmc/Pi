@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pi 3D Scene</title>
+<style>
+    body { margin: 0; }
+    canvas { width: 100%; height: 100% }
+  </style>
+</head>
+<body>
+<video id="video" autoplay loop="loop"></video>
+<script src="three.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.126.1/examples/js/controls/OrbitControls.min.js"></script>
+<script src="https://threejs.org/examples/js/loaders/VideoTextureLoader.min.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5.9.0/index.module.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5.9.0/index.min.css
+" rel="stylesheet">
+<script>
+    var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+var videoElement = document.getElementById("video");
+var videoTextureLoader = new THREE.VideoTextureLoader(videoElement);
+videoTextureLoader.load(function(videoTexture) {
+  var geometry = new THREE.SphereGeometry(50, 50, 50);
+  var material = new THREE.MeshStandardMaterial({
+    map: videoTexture
+  });
+  var sphere = new THREE.Mesh(geometry, material);
+  scene.add(sphere);
+});
+
+var controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.update();
+
+function animate(
+) {
+  requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+}
+
+animate();
+
+  </script>
+</body>
+</html>

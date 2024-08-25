@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: row;
   background-color: #090012;
-  width: 80%;
+  width: 100%;
 }
 header {
   display: flex;
