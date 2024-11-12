@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generous Tresor - CTF</title>
+    <style>
+        /* Couleurs principales */
+        :root {
+            --bleu-electrique: #7DF8FF;
+            --gris-fonce: #333333;
+            --gris-clair: #DDDDDD;
+        }
+
+        /* Styles généraux */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--gris-fonce);
+            color: var(--gris-clair);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* En-tête */
+        header {
+            background-color: var(--gris-fonce);
+            color: var(--bleu-electrique);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header a.logo {
+            font-size: 24px;
+            text-decoration: none;
+            color: var(--bleu-electrique);
+            font-weight: bold;
+        }
+
+        /* Bouton hamburger */
+        .menu-toggle {
+            font-size: 24px;
+            color: var(--bleu-electrique);
+            border: none;
+            background: none;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Menu de navigation */
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--bleu-electrique);
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* Menu responsive */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 50px;
+                right: 20px;
+                background-color: var(--gris-fonce);
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            nav.active {
+                display: flex;
+            }
+        }
+
+        /* Contenu principal */
+        main {
+            padding: 20px;
+            font-size: 16px;
+            color: var(--gris-clair);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: var(--bleu-electrique);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: var(--bleu-electrique);
+            margin-top: 20px;
+        }
+
+        /* Pied de page */
+        footer {
+            background-color: var(--gris-fonce);
+            color: var(--gris-clair);
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: var(--bleu-electrique);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Bouton et éléments interactifs */
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--bleu-electrique);
+            color: var(--gris-fonce);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #6bd0e3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- En-tête avec logo et menu de navigation -->
+    <header>
+        <a href="/" class="logo">Generous Tresor</a>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#a-propos">À propos</a>
+            <a href="#ecosysteme-numerique">Écosystème Numérique</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section id="accueil">
+            <h1>Bienvenue chez Generous Tresor</h1>
+            <p>Participez au Capture the Flag pour découvrir les enjeux de transparence et d’éthique dans la politique et l’économie.</p>
+            <a href="#contact" class="cta-btn">Rejoindre le CTF</a>
+        </section>
+
+        <section id="a-propos">
+            <h2>À propos</h2>
+            <p>Generous Tresor a pour mission de centraliser et redistribuer la valeur travail, en associant citoyens et intelligence artificielle pour une justice sociale équitable.</p>
+        </section>
+
+        <section id="ecosysteme-numerique">
+            <h2>Écosystème Numérique</h2>
+            <p>Notre écosystème inclut le CV numérique universel (CVUN), une innovation destinée à transformer la valorisation des compétences et la transparence dans l'économie circulaire.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <form id="myForm">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" required><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2023 Generous Tresor - Tous droits réservés</p>
+        <p><a href="#mentions-legales">Mentions légales</a> | <a href="#reseaux-sociaux">Réseaux sociaux</a></p>
+    </footer>
+
+    <!-- Script pour le menu responsive -->
+    <script>
+        // Gestion du menu responsive
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('active');
+        });
+
+        // Gestion de l'envoi de formulaire via mailto
+        const form = document.querySelector('#myForm');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const mailtoLink = `mailto:hubmaster74@gmail.com?subject=Participation%20au%20CTF&body=Nom:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}`;
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+
+</html>
